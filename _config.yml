@@ -3,8 +3,8 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
-
+# favicon: /favicon.ico
+favicon: images/favicon.ico
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
 
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2014
 
 # icon between year and author @Footer
 authoricon: heart
@@ -45,12 +45,12 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
+  categories: /categories/
+  about: /about/
   archives: /archives/
   tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  # sitemap: /
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -70,7 +70,7 @@ menu_icons:
   sitemap: sitemap
   commonweal: heartbeat
 
-
+# 
 
 
 # ---------------------------------------------------------------
@@ -78,8 +78,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+# scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -140,9 +140,23 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/your-user-name
+  微博: http://weibo.com/your-user-name
+  豆瓣: http://douban.com/people/your-user-name
+  知乎: http://www.zhihu.com/people/your-user-name
+  # 等等
 
+
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wei.jpg
+alipay: /images/zhi.jpg
+
+# title
+links_title: 友情链接
+links:
+  Miogo: http://miogo.net/
+  Lishisi: https://lishisi.github.io/
 
 # Social Links Icons
 # Icon Mapping:
@@ -154,14 +168,15 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  Weibo: 微博
+  star: 豆瓣
+  sand: 知乎
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -309,7 +324,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: true
 
@@ -318,6 +333,7 @@ disqus:
 
 # Gentie productKey
 #gentie_productKey:
+
 
 # changyan
 changyan:
@@ -337,11 +353,11 @@ changyan:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
+# baidushare:
+# type: button
 
 # Share
-#jiathis:
+# jiathis:
 # Warning: JiaThis does not support https.
 #add_this_id:
 
@@ -477,7 +493,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -522,7 +538,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
